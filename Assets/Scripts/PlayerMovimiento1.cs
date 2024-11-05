@@ -22,4 +22,15 @@ public class PlayerMovimiento1 : MonoBehaviour
         }
          
     }
+
+    void OnCollisionEnter(Collision other){
+        if(other.gameObject.CompareTag("Enemy")){
+            Destroy(other.gameObject);
+            //LOGICA PARA HACER LO QUE QUIERA EN LA NAVE
+            Debug.Log("RestarVida");
+            //Proximo a realizar...
+            //cuando el jugador pierda 3 vidas, reiniciar el juego en automatico despues de 7 segundos
+            //cuando el jugador recolecte las 5 estrellas, que pase al siguiente nivel con un cuadro invisible
+        }
+    }
 }    
