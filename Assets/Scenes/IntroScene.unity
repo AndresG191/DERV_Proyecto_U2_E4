@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: b405a302b84000946b1b62ed82a13b6b, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 41508202f60d46f4f92343e5d78f73b3, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -6496,8 +6496,8 @@ GameObject:
   - component: {fileID: 1975095614}
   - component: {fileID: 1975095613}
   - component: {fileID: 1975095612}
-  - component: {fileID: 1975095616}
   - component: {fileID: 1975095617}
+  - component: {fileID: 1975095618}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -6596,20 +6596,6 @@ Transform:
   - {fileID: 1267923422}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.227, y: -331.283, z: 0.041}
---- !u!114 &1975095616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1975095611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd9a015c70635d439d2212630a3f263, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad_rotacion: 10
-  velocidad_movimiento: 15
 --- !u!54 &1975095617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6637,6 +6623,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1975095618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975095611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856777214fff8524880f39b7dab2798e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad_rotacion: 10
+  velocidad_movimiento: 10
 --- !u!1001 &1975171429
 PrefabInstance:
   m_ObjectHideFlags: 0

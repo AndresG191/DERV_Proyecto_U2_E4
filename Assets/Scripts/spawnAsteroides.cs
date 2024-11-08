@@ -8,6 +8,8 @@ public class spawnAsteroides : MonoBehaviour
     private float limiteX = 11;
     private float limiteZ = 11;
     public GameObject asteroides;
+
+    public GameObject estrellita;
     // Start is called before the first frame update
     
     void Start()
@@ -33,6 +35,13 @@ public class spawnAsteroides : MonoBehaviour
         generaAsteroide();
         generaAsteroide();
         generaAsteroide();
+        generarEstrella();
+    }
+
+    void generarEstrella(){
+        float posicionX = Random.Range(-limiteX,limiteX);
+        Vector3 posicionEstrellita = new Vector3(posicionX, 0, limiteZ);
+        Instantiate(estrellita,posicionEstrellita,estrellita.transform.rotation);
     }
 
     
