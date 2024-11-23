@@ -314,6 +314,10 @@ PrefabInstance:
       value: SoccerPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 551064ebf1da9e24ea77c8730fb06d4a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 551064ebf1da9e24ea77c8730fb06d4a, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: fd6b56838718f894488cadcb76a3df80, type: 2}
