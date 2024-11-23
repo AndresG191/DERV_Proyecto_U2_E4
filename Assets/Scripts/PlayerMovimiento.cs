@@ -7,10 +7,12 @@ public class NewBehaviourScript : MonoBehaviour
    [SerializeField] float velocidad_rotacion;
     [SerializeField] float velocidad_movimiento;
 
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponentInChildren<Animator>();
     }
        void Update()
     {   //arriba - abajo
@@ -32,5 +34,7 @@ public class NewBehaviourScript : MonoBehaviour
         }   else if(Input.GetKey(KeyCode.E)){
             transform.Rotate(0, -1 * velocidad_rotacion * Time.deltaTime, 0);
         }
+        anim.SetFloat("movimientos",0f);
+        anim.SetFloat("movimientos",1f);
     }
 }    
